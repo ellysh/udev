@@ -1,4 +1,4 @@
 KERNEL!="sd[a-z][0-9]", GOTO="automount_end"
-ACTION=="add", BUS=="usb", SUBSYSTEM=="block", KERNEL=="sd[a-z][0-9]", NAME="%k", GROUP="disk", RUN+="/etc/udev/scripts/udev-flash-mount.sh add %k"
-ACTION=="remove", BUS=="usb", SUBSYSTEM=="block", KERNEL=="sd[a-z][0-9]", RUN+="/etc/udev/scripts/udev-flash-mount.sh remove %k"
+ACTION=="add", BUS=="usb", SUBSYSTEM=="block", KERNEL=="sd[a-z][0-9]", NAME="%k", GROUP="disk", RUN+="/etc/udev/scripts/udev-mount.sh add %k"
+ACTION=="remove", BUS=="usb", SUBSYSTEM=="block", KERNEL=="sd[a-z][0-9]", RUN+="/etc/udev/scripts/udev-mount.sh remove %k"
 LABEL="automount_end"
