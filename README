@@ -1,0 +1,13 @@
+1. INTRODUCTION
+
+This is rules and script for flash drive and cd automount.
+For its work the udev is needed.
+
+2. INSTALL
+
+Copy udev-mount.sh script to the /etc/udev/scripts directory.
+Copy rules files to the /etc/udev/rules.d directory.
+
+ --
+ Ilya Shpigor
+ petrsum@gmail.com
